@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="26dp"
+    android:backgroundTint="#ffff"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/p1"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        android:src="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/ville"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ville"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="36dp"
+        android:text="TextView"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/sexe"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+
+        />
+
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="42dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/img2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="40dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        android:src="@mipmap/img3" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="36dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+
+        android:src="@mipmap/img4" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="44dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
